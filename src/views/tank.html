@@ -1,0 +1,34 @@
+<div class="d-flex align-items-end">
+	<div class="cylinder">
+		<div class="water"></div>
+	</div>
+	<div class="h-100">
+		<!--
+			vue syntax to populate
+		-->
+		<div class="grad-scale" v-for="val in grads">- {{ val }}</div>
+	</div>
+</div>
+
+<style>
+	.grad-scale {
+		margin-left: 10px;
+		height: 0px;
+		margin-top: 75px;
+	}
+</style>
+
+<script>
+	function graduate(tankVolume) {
+		let cal = []; // Empty array to add all possible scale
+
+		for (let i = 0; i <= tankVolume; i += tankVolume / 4) {
+			cal.unshift(i); //[10, 8, 6...etc]
+		}
+
+		totalTankVolume.value = tankVolume;
+
+		// The array used to populate the scale
+		grads.value = cal;
+	}
+</script>
