@@ -5,23 +5,23 @@
 	const loading = ref(false);
 
 	const tankModel = ref({
-		consumption: 345,
-		contentId: "HYD",
-		delVolume: 2435,
+		consumption: 43,
+		contentId: "AIR",
+		delVolume: 23,
 		filling: "0",
 		lastReading: "0",
-		minUsefVolume: 234,
-		totalUsefVolume: 3245,
-		totalVolume: 2193,
-		height: 2342,
-		diameter: 3453,
+		minUsefVolume: 345,
+		totalUsefVolume: 34,
+		totalVolume: 10.450278625902733,
+		height: 243,
+		diameter: 234,
 		color: "#000000",
 		shape: "Cylinder",
 	});
 
 	const formData = ref({
 		assetId: "new-record",
-		assetName: "fdassdfa",
+		assetName: "Fourth Tank Calibration Test Aj",
 		assetDesc: "sff",
 		assetTypeId: "TANK",
 		companyId: "abcltd",
